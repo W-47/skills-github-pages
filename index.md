@@ -38,7 +38,29 @@ Aah yes we get a username and maybe a password and we shall try to ssh to this u
 
 Yes we are able to login as alice.
 # USER.TXT
-Let us try to get the user.txt flag 
+Let us try to get the user.txt flag.
+
+![](/assets/user.png)
+
+# PRIVILEDGE ESCALATION 
+We notice that the user Alice cannot do much on this machine so we can try and escalate our priviledges in order to get the root.txt flag. 
+We then see a python file on it and when we open it we notice that the script is trying to import a file called random 
+
+![](/assets/walrusnano.png)
+
+Here we can try and use python library hijacking. First we need to get the path followed when the script is importing random 
+
+![](/asssets/syspath.png)
+
+We then can create our own python script that will enable us to switch users to rabbit.
+
+![](/assets/os.png)
+
+Then we can run the command **sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py**. And we succesfully change to rabbit user 
+![](/assets/changetorabbit.png)
+
+
+
 
 
 
