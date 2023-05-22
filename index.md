@@ -1,5 +1,5 @@
 ---
-layout: <_layout-default.html>
+layout: <default>
 title: Alice in wonderland 
 ---
 Hello and welcome to the tryhack me writeup [Alice on wonderland](https://tryhackme.com/room/wonderland)
