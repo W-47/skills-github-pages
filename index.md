@@ -1,6 +1,5 @@
 ---
-layout: <default>
----
+layout: default
 ---  
 title: Alice in wonderland 
 ---
