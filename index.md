@@ -26,5 +26,8 @@ From the results of the first gobuster we see a hidden directory **/r**. When we
 
 ![](/assets/web2.png)
 
+Frome the title we see that we are told to keep going. So we use gobuster on the directory again discovering more directories which make up the word **rabbit** (Follow the white rabbit)
+![](/assets/web7.png)
 
+We can view the page source on this 
 
