@@ -6,3 +6,4 @@ Hello and welcome to the tryhack me writeup [Alice on wonderland writeup](https:
 
 # NMAP SCAN
 
+![](/home/the-lab/THMrooms/wonderland%20nmap.png)
