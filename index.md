@@ -6,5 +6,5 @@ Hello and welcome to the tryhack me writeup [Alice on wonderland writeup](https:
 
 # NMAP SCAN
 
-![](https://imgur.com/a/jY5lige)
+![nmap.png](/assets/nmap.png)
 
