@@ -29,5 +29,9 @@ From the results of the first gobuster we see a hidden directory **/r**. When we
 Frome the title we see that we are told to keep going. So we use gobuster on the directory again discovering more directories which make up the word **rabbit** (Follow the white rabbit)
 ![](/assets/web7.png)
 
-We can view the page source on this 
+We can view the page source on this.
+
+![](/assets/creds.png)
+
+Aah yes we get a username and maybe a password and we shall try to ssh to this user using the creds.
 
