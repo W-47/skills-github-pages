@@ -14,5 +14,11 @@ After a quick nmap scan we can see that the port 22 and port 80 are open.
 
 From the previous nmap scan we can see that a web server is hosted on port 80 and we can use the IP to see it 
 
+This is what we see 
+
+![](/assets/web1.png)
+
+Here we can use gobuster in an effort to find any directories that may be hidden.
+
 
 
