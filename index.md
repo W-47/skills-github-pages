@@ -59,6 +59,19 @@ We then can create our own python script that will enable us to switch users to 
 Then we can run the command **sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py**. And we succesfully change to rabbit user 
 ![](/assets/changetorabbit.png)
 
+Here we can see a binary called **teaParty** and when we try and run it we see that we can actually hijack the date binary to give us acces as another user.
+
+![](/assets/teaparty.png)
+
+First we will create another file like so:
+
+![](/assets/date.png)
+
+Then we will change the mode to execute and export the binary to PATH then we will run **./teaParty** again.
+And we ara able to change to hatter 
+![](/assets/hatter.png)
+
+
 
 
 
