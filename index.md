@@ -34,4 +34,11 @@ We can view the page source on this.
 ![](/assets/creds.png)
 
 Aah yes we get a username and maybe a password and we shall try to ssh to this user using the creds.
+!()[/assets/ssh.png)
+
+Yes we are able to login as alice.
+# USER.TXT
+Let us try to get the user.txt flag 
+
+
 
