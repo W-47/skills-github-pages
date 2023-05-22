@@ -20,5 +20,11 @@ This is what we see
 
 Here we can use gobuster in an effort to find any directories that may be hidden.
 
+![](/assets/go1)
+
+From the results of the first gobuster we see a hidden directory **/r**. When we go to the directory this is what we see
+
+![](/assets/web2)
+
 
 
