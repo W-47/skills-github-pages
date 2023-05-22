@@ -1,4 +1,4 @@
 ---
-title: Welcome to my blog!
+title: Alice in wonderland 
 ---
-I shall be posting writeups here soon, right after i figure out how to use this lmao!
+
