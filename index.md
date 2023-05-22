@@ -71,6 +71,25 @@ Then we will change the mode to execute and export the binary to PATH then we wi
 And we ara able to change to hatter 
 ![](/assets/hatter.png)
 
+We can then cd into **/home/hatter** directory and find a password 
+![](/assets/password.png)
+
+We can use this password to ssh into the machine as hatter. And we got a succesful login 
+![](/assets/sshhatter.png)
+
+## GETTING ROOT.TXT
+
+Here we can use **getcap -r /** in order to get the enabled capabilities, and we find out that the **setuid+ep** has been enabled on pearl.
+
+![](/assets/getcap.png)
+
+From here we can use a simple command **/usr/bin/perl -e 'use POSIX qw(setuid); POSIX::setuid(0); exec "/bin/sh";'** to get to the root shell
+Then it is possible to cd into alice and get the root.txt
+
+![](/assets/roottxt.png)
+
+
+
 
 
 
