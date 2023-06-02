@@ -4,6 +4,6 @@ title: categories
 permalink: /categories/
 ---
 
-- Privesc
+- [Priviledge escalation](privesc.md)
 - Personal notes
 - Web exploitation
