@@ -10,7 +10,7 @@ So we will be trying to get some credentials and log in as a particular user and
 # NMAP SCAN
 
 After a quick nmap scan we can see that the port 22 and port 80 are open.
-![nmap.png](/blob/main/assets/nmap.png)
+![nmap.png](/assets/nmap.png)
 
 
 
