@@ -1,1 +1,1 @@
-gem 'jekyll-theme-hamilton'
+gem 'jekyll-include-cache'
