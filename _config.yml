@@ -1,8 +1,6 @@
 plugins:
   - jekyll-include-cache
 
-remote_theme: ngzhio/jekyll-theme-hamilton
-
 title: Dexter
 description: Just a blog
 author: Dexter
