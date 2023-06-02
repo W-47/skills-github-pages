@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alice in wonderland
-categories: Priviledge escalation
+categories: Privesc
 ---
 Hello and welcome to the tryhack me writeup [Alice on wonderland](https://tryhackme.com/room/wonderland).
 # OVERVIEW
@@ -10,9 +10,7 @@ So we will be trying to get some credentials and log in as a particular user and
 # NMAP SCAN
 
 After a quick nmap scan we can see that the port 22 and port 80 are open.
-![nmap.png](/assets/nmap.png)
-
-
+![](/assets/nmap.png)
 
 # WEB ENUMARATION
 
@@ -22,18 +20,9 @@ This is what we see
 
 ![](/assets/web1.png)
 
-
-
 Here we can use gobuster in an effort to find any directories that may be hidden.
 
-
-
-
 ![](/assets/go1.png)
-
-
-
-
 
 From the results of the first gobuster we see a hidden directory **/r**. When we go to the directory this is what we see
 
