@@ -1,4 +1,7 @@
-theme: minima
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: ngzhio/jekyll-theme-hamilton
 
 title: Dexter
 description: Just a blog
