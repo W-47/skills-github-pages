@@ -13,4 +13,4 @@ Okay quick overview, so we will be trying to bruteforce ssh and get some credent
 # NMAP SCAN
 First things first a quick nmap scan to check on the open ports. 
 
-![](https://ibb.co/zR94Vbj)
+![](https://ibb.co/zR94Vbj/nmap.png)
