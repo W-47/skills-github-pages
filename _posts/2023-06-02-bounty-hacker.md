@@ -41,7 +41,7 @@ Boom! We have a hit!
 # PRIVILEDGE ESCALATION.
 So next we should try and get root priviledges. so first we shall do **sudo -l** and we see that we can run (/var/tar) as root.
 
-So we shall hop over to ![GTFO bins](https://gtfobins.github.io/gtfobins/tar/#sudo) and copy that command out to our machine.
+So we shall hop over to [GTFO bins](https://gtfobins.github.io/gtfobins/tar/#Sudo) and copy that command out to our machine.
 
 ![](https://i.ibb.co/G9t21vZ/privesc.png)
 
