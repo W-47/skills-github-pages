@@ -2,7 +2,9 @@
 layout: post
 title: Alice in wonderland
 ---
-Hello and welcome to the tryhack me writeup [Alice on wonderland](https://tryhackme.com/room/wonderland)
+Hello and welcome to the tryhack me writeup [Alice on wonderland](https://tryhackme.com/room/wonderland).
+# OVERVIEW
+So we will be trying to get some credentials and log in as a particular user and then try to escalate our priviledges to root and get the flag. With that said lets get to it
 
 # NMAP SCAN
 
