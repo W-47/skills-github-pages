@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Alice in wonderland
-categories: Priviledge escalation
 ---
 Hello and welcome to the tryhack me writeup [Alice on wonderland](https://tryhackme.com/room/wonderland).
 # OVERVIEW
