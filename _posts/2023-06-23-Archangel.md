@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Alice in wonderland
+title: Archangel
 categories: Privesc
 ---
 Hello guys and welcome to yet another writeup. This is ye another easy box on tryhackme and is accessible [here](https://tryhackme.com/room/archangel)
@@ -36,4 +36,10 @@ We can then see that the button redirects us to **?view=/var/www/html/developmen
 
 From here we can try to do a path traversal filter. After hours of trial and error I found this filter and it worked.
 **php://filter/convert.base64-encode/resource=**
+Okay so now we can see some base64 code 
+let us try and change **mrrobot.php** to **test.php**. And we can see some more base64. let us decode that.
 
+![](https://i.ibb.co/pnGV1tK/testbase64.png)
+![](https://i.ibb.co/944fSfv/lfiflag.png)
+
+And we can get a flag but also we can see some php filters on it.
