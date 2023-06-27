@@ -119,8 +119,8 @@ And yes we are root.
 ![](https://i.ibb.co/tCf2k5W/root.png)
 
 # RESOURCES
-1. [](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
-2. [](https://devansh.xyz/ctfs/2021/09/11/php-tricks.html)
+[BASH FOR BEGINNERS](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
+[PHP TRICKS](https://devansh.xyz/ctfs/2021/09/11/php-tricks.html)
 
 Okay honestly that was a great learning experience for me and I hope it is the same for you. 
 Happy hacking :)
