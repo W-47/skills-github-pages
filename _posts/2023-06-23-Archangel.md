@@ -101,7 +101,27 @@ So type:
  4. **echo $PATH**
  5. **./backup**
 
-Okay let us dig into what jus happened.
+Okay let us dig into what jus happened. This is gonna be crazy but heck.
 
+ 1. **echo '/bin/bash -p' > cp**: This command redirects the output of the `echo` command, which is the string `'/bin/bash -p'`, into a file named `cp`. The content of the `cp` file will be `/bin/bash -p`.
 
+ 2. **chmod 777 cp**: This command changes the permissions of the `cp` file to allow all users to read, write, and execute it. The `chmod` command is used to modify file permissions, and `777` is a symbolic representation that grants all permissions to the owner, group, and others.
+
+ 3. **export PATH=/home/archangel/secret:$PATH**: This command adds a directory called `/home/archangel/secret` to the beginning of the `PATH` environment variable. The `PATH` variable contains a list of directories that the shell searches for executable files. By adding `/home/archangel/secret` at the beginning, any executable file in that directory will take precedence over files with the same name in other directories listed in `PATH`.
+
+ 4. **echo $PATH**: This command displays the value of the `PATH` environment variable. After the previous `export` command, it will show `/home/archangel/secret` followed by the original directories that were part of `PATH`.
+
+ 5. **./backup**: This command attempts to execute a file named `backup` in the current directory. The `./` prefix indicates that the file should be executed from the current directory instead of searching for it in the directories listed in `PATH`. If the `backup` file exists and has executable permissions, it will be run with the elevated privileges specified in step 1 (`/bin/bash -p`).
+
+Overall, these commands create a file called `cp` with elevated permissions, modify the `PATH` environment variable to prioritize a specific directory, and execute a file named `backup` with elevated privileges. The exact consequences and implications of these actions depend on the specific context and contents of the `backup` file.
+
+And yes we are root.
+![](https://i.ibb.co/tCf2k5W/root.png)
+
+# RESOURCES
+1. [](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
+2. [](https://devansh.xyz/ctfs/2021/09/11/php-tricks.html)
+
+Okay honestly that was a great learning experience for me and I hope it is the same for you. 
+Happy hacking :)
 
