@@ -26,12 +26,17 @@ We can actually use this and and it to our **/etc/hosts** file, then try and go 
 Okay guys it is about to get really messy in here. Stay frosty.
 
 So first of all we are going to FUZZ for hidden directories.
+
 ![](https://i.ibb.co/kQRKnYg/wfuzz.png)
+
 And we get a hit for **robots.txt**. which when we visit the page looks something like this.
+
 ![](https://i.ibb.co/vv2SyZj/robots.png).
 
 And we can actually see another directory **/test.php**. visit this page and we can view another page with a button.
+
 ![](https://i.ibb.co/VYM0RyP/control.png)
+
 We can then see that the button redirects us to **?view=/var/www/html/development_testing/mrrobot.php**.
 
 From here we can try to do a path traversal filter. After hours of trial and error I found this filter and it worked.
