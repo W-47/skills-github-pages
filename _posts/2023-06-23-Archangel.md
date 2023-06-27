@@ -35,7 +35,7 @@ And we get a hit for **robots.txt**. which when we visit the page looks somethin
 
 And we can actually see another directory **/test.php**. visit this page and we can view another page with a button.
 
-![](https://i.ibb.co/VYM0RyP/control.png)
+![](https://i.ibb.co/cJPSy3b/control.png)
 
 We can then see that the button redirects us to **?view=/var/www/html/development_testing/mrrobot.php**.
 
