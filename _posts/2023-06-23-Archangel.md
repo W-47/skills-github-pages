@@ -43,3 +43,16 @@ let us try and change **mrrobot.php** to **test.php**. And we can see some more 
 ![](https://i.ibb.co/944fSfv/lfiflag.png)
 
 And we can get a flag but also we can see some php filters on it.
+# Acesslog
+Okay so the filter dictates that using **../..** which we can easily bypasss by using **..//..**.
+Next let us try and view the access log using the bypass.
+![](https://i.ibb.co/f98gBfQ/accesslog.png)
+
+So next we can try and pass some malicious code to the user agent. **<?php system($_GET['cmd']); ?>**.
+So to do this follow this steps.
+
+ 1. right click and press Inspect on the dropdown menu
+
+
+
+
